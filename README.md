@@ -30,23 +30,25 @@ pinned PVE schema version.
 
 ## Projects
 
-| Category | Project | Description | Maintenance |
+| Category | Project | Description | Source |
 |---|---|---|---|
-| Toolchain | `proxbeam` | Schema extraction and code generators | Hand-maintained |
-| SDKs | `golang-sdk` | Go client | Generated |
-| | `python-sdk` | Python client with type hints | Generated |
-| | `typescript-sdk` | TypeScript client | Generated |
-| | `rust-sdk` | Rust client | Generated |
-| | `ruby-sdk` | Ruby client with RBS types | Generated |
-| Infrastructure | `terraform-provider-proxmox` | Terraform provider | Generated |
-| | `ansible-collection` | Ansible collection | Generated |
-| Kubernetes | `terraform-proxmox-kubernetes` | OpenTofu module that builds [Talos](https://www.talos.dev/) Kubernetes clusters on Proxmox VE, with Karpenter node autoscaling | Hand-maintained |
-| | `karpenter-provider-proxmox` | [Karpenter](https://karpenter.sh/) provider: Kubernetes node autoscaling on Proxmox VE for any distribution (Talos, k3s, kubeadm, RKE2) | Hand-maintained |
-| CI | `fleeting-plugin-proxmox` | [GitLab Runner fleeting](https://docs.gitlab.com/runner/fleet_scaling/fleeting/) plugin for autoscaling CI job VMs | Hand-maintained |
+| Toolchain | [`proxbeam`](https://github.com/proxbeam/proxbeam) | Schema extraction and code generators | Crafted |
+| SDKs | [`golang-sdk`](https://github.com/proxbeam/golang-sdk) | Go client | Codegen |
+| | [`python-sdk`](https://github.com/proxbeam/python-sdk) | Python client with type hints | Codegen |
+| | [`typescript-sdk`](https://github.com/proxbeam/typescript-sdk) | TypeScript client | Codegen |
+| | [`rust-sdk`](https://github.com/proxbeam/rust-sdk) | Rust client | Codegen |
+| | [`ruby-sdk`](https://github.com/proxbeam/ruby-sdk) | Ruby client with RBS types | Codegen |
+| Infrastructure | [`terraform-provider-proxmox`](https://github.com/proxbeam/terraform-provider-proxmox) | Terraform provider | Codegen |
+| | [`ansible-collection`](https://github.com/proxbeam/ansible-collection) | Ansible collection | Codegen |
+| Kubernetes | [`terraform-proxmox-kubernetes`](https://github.com/proxbeam/terraform-proxmox-kubernetes) | OpenTofu module that builds [Talos](https://www.talos.dev/) Kubernetes clusters on Proxmox VE, with Karpenter node autoscaling | Crafted |
+| | [`karpenter-provider-proxmox`](https://github.com/proxbeam/karpenter-provider-proxmox) | [Karpenter](https://karpenter.sh/) provider: Kubernetes node autoscaling on Proxmox VE for any distribution (Talos, k3s, kubeadm, RKE2) | Crafted |
+| | [`proxmox-cloud-controller-manager`](https://github.com/proxbeam/proxmox-cloud-controller-manager) | [Cloud controller manager](https://kubernetes.io/docs/concepts/architecture/cloud-controller/): ties each Kubernetes Node to its Proxmox VE VM, with zones, addresses and instance types | Crafted |
+| | [`proxmox-csi-plugin`](https://github.com/proxbeam/proxmox-csi-plugin) | [CSI](https://github.com/container-storage-interface/spec) plugin: Kubernetes persistent volumes as Proxmox VE disks | Crafted |
+| CI | [`fleeting-plugin-proxmox`](https://github.com/proxbeam/fleeting-plugin-proxmox) | [GitLab Runner fleeting](https://docs.gitlab.com/runner/fleet_scaling/fleeting/) plugin for autoscaling CI job VMs | Crafted |
 
-Generated projects are produced by `proxbeam` from the PVE schema; each SDK
-covers all 680 endpoints. Hand-maintained projects are developed and released
-independently.
+Codegen projects are produced by `proxbeam` from the PVE schema; each SDK
+covers all 680 endpoints. Crafted projects are designed and written directly,
+and released on their own schedule.
 
 ## Support
 

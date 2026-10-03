@@ -40,6 +40,7 @@ pinned PVE schema version.
 | | `ruby-sdk` | Ruby client with RBS types | Generated |
 | Infrastructure | `terraform-provider-proxmox` | Terraform provider | Generated |
 | | `ansible-collection` | Ansible collection | Generated |
+| Kubernetes | `terraform-proxmox-kubernetes` | OpenTofu module that builds [Talos](https://www.talos.dev/) Kubernetes clusters on Proxmox VE, with Karpenter node autoscaling | Hand-maintained |
 | CI | `fleeting-plugin-proxmox` | [GitLab Runner fleeting](https://docs.gitlab.com/runner/fleet_scaling/fleeting/) plugin for autoscaling CI job VMs | Hand-maintained |
 
 Generated projects are produced by `proxbeam` from the PVE schema; each SDK

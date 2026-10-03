@@ -41,6 +41,7 @@ pinned PVE schema version.
 | Infrastructure | `terraform-provider-proxmox` | Terraform provider | Generated |
 | | `ansible-collection` | Ansible collection | Generated |
 | Kubernetes | `terraform-proxmox-kubernetes` | OpenTofu module that builds [Talos](https://www.talos.dev/) Kubernetes clusters on Proxmox VE, with Karpenter node autoscaling | Hand-maintained |
+| | `karpenter-provider-proxmox` | [Karpenter](https://karpenter.sh/) provider: Kubernetes node autoscaling on Proxmox VE for any distribution (Talos, k3s, kubeadm, RKE2) | Hand-maintained |
 | CI | `fleeting-plugin-proxmox` | [GitLab Runner fleeting](https://docs.gitlab.com/runner/fleet_scaling/fleeting/) plugin for autoscaling CI job VMs | Hand-maintained |
 
 Generated projects are produced by `proxbeam` from the PVE schema; each SDK
